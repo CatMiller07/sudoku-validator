@@ -92,20 +92,4 @@ var Sudoku = function(data)
 };
 
 
- // retrieve puzzle data
-	  var data = new Array(81).fill("");	
-	  $.ajax({
-		     url:"http://www.swolebrain.com:4004/sudoku",
-		   success:function(resp,status,jqxhr){
-			   console.log("ajax call was successful"+status);
-			   data = resp;
-		   } 
-		  
-	  });	
-      
-     for (var r = 0; r < data.length; r++){
-        for (var c = 0; c < data.length; c++){
-            $("#board").html(data[r][c]) ;
-        }
-      }
-
+ 
