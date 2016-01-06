@@ -73,7 +73,6 @@ var Sudoku = function(data)
   return {
     isValid: function() {
       // YOUR SOLUTION
-	 
 	  
       if (!validNxN(data)) return false;
       if (!isNumeric(data)) return false;
