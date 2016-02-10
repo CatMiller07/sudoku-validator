@@ -223,6 +223,8 @@
 		   $(document).ready(function () { 
    	           
 			    var cell="";
+			    var quadrants = new Array(9).fill(0);
+			   
                  //alert("here i am");
 			    function loadUserBoard(){
 					var result = [new Array(9), 
@@ -267,10 +269,15 @@
 								
 							  }
 						  } 
+						 
+						 
 				     }	     
 
 				});	
 
+			  
+			   
+			   
 			    $(".close-icon").on("click",function(){
 					$("#sudoku-result").html(""); //clear result field
 					location.reload();            //reload page
